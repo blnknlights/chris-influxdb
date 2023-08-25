@@ -11,7 +11,7 @@ influx = initiate_client()
 for i in amplitude:
     influx.send_data(
         bucket="chris-bucket",
-        measurement="sin-wave",
+        measurement="sine-wave",
         location="earth",
         temperature=i
     )
