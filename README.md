@@ -52,7 +52,7 @@ security find-generic-password -a influxdb -s INFLUXDB_ACCESS -w
 
 ```bash
 git clone git@github.com:blnknlights/chris-influxdb.git
-mkdir chris-influxdb
+cd chris-influxdb
 python3 -m venv venv
 source venv/bin/activate
 pip install -U pip
