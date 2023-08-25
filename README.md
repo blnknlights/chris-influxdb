@@ -65,7 +65,17 @@ pip install 'influxdb-client[ciso]'
 ### Testing the client library
 
 I made a simple class that you can use to experiment with this, it's in `influx_client.py`.  
-there's also a function that you can use to quickly initiate the client and connect, it's called `initiate_client()`
+there's also a function that you can use to quickly initiate the client and connect, it's called `initiate_client()`  
+It implies that your bucket, org and token are setup exactly like that:
+```python
+org = "chris-corp"
+url = "http://localhost:8086"
+access_token = keyring.get_password(
+    "INFLUXDB_ACCESS",
+    "influxdb"
+)
+```
+If they aren't you will need to change the names in there.
 
 #### influx cli
 
