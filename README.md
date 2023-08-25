@@ -31,6 +31,7 @@ export INFLUXDB-OPERATOR=$(security find-generic-password -a influxdb -s INFLUXD
 ```
 
 ### Configure the access token
+
 Use influx cli to create an `all access` token and put it in keychain too.
 ```bash
 influx auth create \
@@ -38,6 +39,11 @@ influx auth create \
   --host http://localhost:8086 \
   --org chris-corp \
   --token $INFLUXDB_OPERATOR
+```
+
+```bash
+security add-generic-password -a influxdb -s INFLUXDB_ACCESS -w
+security find-generic-password -a influxdb -s INFLUXDB_ACCESS -w
 ```
 
 ## Python client
