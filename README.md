@@ -45,7 +45,8 @@ influx auth create \
 ### Setup your python environment
 
 ```bash
-mkdir chris;cd $_
+git clone git@github.com:blnknlights/chris-influxdb.git
+mkdir chris-influxdb
 python3 -m venv venv
 source venv/bin/activate
 pip install -U pip
