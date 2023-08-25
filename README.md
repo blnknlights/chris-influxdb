@@ -84,7 +84,7 @@ python3 influx_cli.py send-data
 ok
 ```
 
-Get data, if not params are provided it gets the dummy data from the past 10 minutes
+Get data, if no params are provided it gets the dummy data from the past 10 minutes
 ```bash
 python3 influx_cli.py get-data
 [
